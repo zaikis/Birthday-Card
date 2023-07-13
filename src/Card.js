@@ -1,6 +1,7 @@
 // eslint-disable-next-line import/no-anonymous-default-export
 
-export default () => (
+function Card (){
+return (
   <div className="birthdayCard">
     <div className="cardFront">
       <h3 className="happy">HAPPY BIRTHDAY EVELINA!</h3>
@@ -31,4 +32,7 @@ export default () => (
       <p className="name">EVELINA</p>
     </div>
   </div>
-);
+	);
+}
+export default Card
+
