@@ -1,7 +1,8 @@
 import Card from "./Card";
+
 import "./styles.css";
 import Confetti from "react-confetti";
-
+import Balloons from "./Balloons";
 export default function App() {
   return (
     <div>
@@ -13,6 +14,8 @@ export default function App() {
         gravity={0.2}
       />
       <Card />
+      <Balloons />
     </div>
   );
 }
+
