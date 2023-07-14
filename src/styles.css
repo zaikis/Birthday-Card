@@ -1,29 +1,15 @@
-/* body {
-  height: 1000px;
-  width: 1010px;
-  margin-left: 00px;
-  background-image: linear-gradient(#000000, #ff66cc);
-} */
-
 body {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  text-align: center;
-  background: linear-gradient(#000000, #ff66cc);
+  background-color: #073b4c;
 }
-
-/* body {
-  margin: 20px;
-  background: hsl(70, 31%, 85%);
-  text-align: center;
-} */
 
 .birthdayCard {
   position: relative;
-  width: 350px;
-  height: 450px;
+  width: 250px;
+  height: 350px;
   cursor: pointer;
   transform-style: preserve-3d;
   transform: perspective(2500px);
@@ -46,10 +32,9 @@ body {
 
 .cardFront {
   position: relative;
-  background-color: #fff4f4;
-  width: 350px;
-  height: 450px;
-  left: 250px;
+  background-color: #fff;
+  width: 250px;
+  height: 350px;
   overflow: hidden;
   transform-origin: left;
   box-shadow: inset 100px 20px 100px rgba(0, 0, 0, 0.2),
@@ -57,14 +42,6 @@ body {
   transition: 0.6s;
 }
 
-.heart {
-  fill: red;
-  margin: auto;
-  position: relative;
-  top: 10px;
-  width: 50px;
-  animation: pulse 1s ease infinite;
-}
 .happy {
   font-family: Tahoma, sans-serif;
   text-align: center;
@@ -74,28 +51,14 @@ body {
   backface-visibility: visible;
 }
 
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.3);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-/* .balloons {
+.balloons {
   position: absolute;
 }
 
 .balloonOne,
 .balloonTwo,
 .balloonThree,
-.balloonFour,
-.balloonFive,
-.balloonSix {
+.balloonFour {
   position: absolute;
   width: 85px;
   height: 95px;
@@ -104,7 +67,7 @@ body {
 
 .balloonOne {
   background-color: rgb(239, 71, 111, 0.7);
-  left: 0px;
+  left: -10px;
   top: 50px;
 }
 
@@ -122,27 +85,14 @@ body {
 
 .balloonFour {
   background-color: rgb(17, 138, 178, 0.7);
-  left: 165px;
-  top: 20px;
-}
-.balloonFive {
-  background-color: #a711b2b3;
-  left: 225px;
-  top: 50px;
-}
-
-.balloonSix {
-  background-color: #01ffc4b3;
-  left: 265px;
+  left: 170px;
   top: 20px;
 }
 
 .balloonOne:before,
 .balloonTwo:before,
 .balloonThree:before,
-.balloonFour:before,
-.balloonFive:before,
-.balloonSix::before {
+.balloonFour:before {
   content: "";
   position: absolute;
   width: 1px;
@@ -155,9 +105,7 @@ body {
 .balloonOne:after,
 .balloonTwo:after,
 .balloonThree:after,
-.balloonFour:after,
-.balloonFive:after,
-.balloonSix:after {
+.balloonFour:after {
   content: "";
   position: absolute;
   border-right: 7px solid transparent;
@@ -167,96 +115,41 @@ body {
 }
 
 .balloonOne:after {
-  border-bottom: 5px solid #ef476f;
+  border-bottom: 10px solid #ef476f;
 }
 
 .balloonTwo:after {
-  border-bottom: 5px solid #06d6a0;
+  border-bottom: 10px solid #06d6a0;
 }
 
 .balloonThree:after {
-  border-bottom: 5px solid #ffd166;
+  border-bottom: 10px solid #ffd166;
 }
 
 .balloonFour:after {
-  border-bottom: 5px solid #118ab2;
+  border-bottom: 10px solid #118ab2;
 }
-.balloonFive:after {
-  border-bottom: 5px solid #a711b2b3;
-}
-.balloonSix:after {
-  border-bottom: 5px solid #01ffc4b3;
-} */
-.cake {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  width: 200px;
-  height: 40px;
-  background: #6b5344;
-  border-radius: 100%;
-  box-shadow: 0px 4px 0px #6b5344, 0px 8px 0px #6b5344, 0px 12px 0px #6b5344,
-    0px 16px 0px #6b5344, 0px 20px 0px #6b5344, 0px 24px 0px #6b5344,
-    0px 28px 0px #6b5344, 0px 32px 0px #eb9f9f, 0px 36px 0px #eb9f9f,
-    0px 40px 0px #f8ecc9, 0px 44px 0px #f8ecc9, 0px 48px 0px #f8ecc9,
-    0px 52px 0px #f8ecc9, 0px 56px 0px #6b5344, 0px 60px 0px #6b5344,
-    0px 64px 0px #6b5344, 0px 68px 0px #6b5344, 0px 72px 0px #6b5344,
-    0px 76px 0px #6b5344, 0px 80px 0px #6b5344;
 
-  &:before {
-    position: absolute;
-    right: 0;
-    top: 79px;
-    left: -25px;
-    margin: auto;
-    content: "";
-    width: 250px;
-    height: 50px;
-    border-radius: 100%;
-    background: #ffffff;
-    box-shadow: 0px 6px 0px rgba(0, 0, 0, 0.1);
-    z-index: -1;
-  }
-
-  &:after {
-    position: absolute;
-    top: -50px;
-    left: 0;
-    right: 0;
-    margin: 0;
-    bottom: 0;
-    content: "3";
-    font-family: "Open Sans";
-    font-size: 4em;
-    font-weight: bold;
-    color: #e5e5e5;
-    -webkit-text-stroke: 2px #f66095;
-    text-align: center;
-  }
-}
 .cardInside {
   position: absolute;
-  background-color: #fff4f4;
-  width: 350px;
-  height: 450px;
+  background-color: #fff;
+  width: 250px;
+  height: 350px;
   z-index: -1;
-  left: 250px;
+  left: 0;
   top: 0;
   box-shadow: inset 100px 20px 100px rgba(0, 0, 0, 0.2);
 }
 
 p {
-  font-family: Snell Roundhand, cursive;
+  font-family: "Brush Script MT", cursive;
   margin: 40px;
-  color: #000000;
+  color: #333;
 }
 
 .name {
   position: absolute;
-  left: 100px;
+  left: 150px;
   top: 200px;
   color: #333;
 }
@@ -269,4 +162,3 @@ p {
   outline-color: #333;
   outline-style: dotted;
 }
-
