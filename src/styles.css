@@ -1,9 +1,91 @@
 body {
   display: flex;
+  margin: 40px;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: #eec0c8;
+  text-align: center;
+  background: linear-gradient(#000000, #ff66cc);
+}
+
+.balloon {
+  display: inline-block;
+  width: 120px;
+  height: 145px;
+  background: hsl(215, 50%, 65%);
+  border-radius: 80%;
+  position: relative;
+  box-shadow: inset -10px -10px 0 rgba(0, 0, 0, 0.07);
+  margin: 20px 40px;
+  transition: transform 0.5s ease;
+  z-index: 10;
+  animation: balloons 3s ease-in-out infinite;
+  transform-origin: bottom center;
+}
+
+@keyframes balloons {
+  0%,
+  100% {
+    transform: translateY(0) rotate(-4deg);
+  }
+  50% {
+    transform: translateY(-25px) rotate(4deg);
+  }
+}
+
+.balloon:before {
+  content: "▲";
+  font-size: 20px;
+  color: hsl(215, 30%, 50%);
+  display: block;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  bottom: -12px;
+  z-index: -100;
+}
+
+.balloon:after {
+  display: inline-block;
+  top: 153px;
+  position: absolute;
+  height: 250px;
+  width: 1px;
+  margin: 0 auto;
+  content: "";
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.balloon:nth-child(2) {
+  background: hsl(245, 40%, 65%);
+  animation-duration: 3.5s;
+}
+.balloon:nth-child(2):before {
+  color: hsl(245, 40%, 65%);
+}
+
+.balloon:nth-child(3) {
+  background: hsl(139, 50%, 60%);
+  animation-duration: 3s;
+}
+.balloon:nth-child(3):before {
+  color: hsl(139, 30%, 50%);
+}
+
+.balloon:nth-child(4) {
+  background: hsl(59, 50%, 58%);
+  animation-duration: 4.5s;
+}
+.balloon:nth-child(4):before {
+  color: hsl(59, 30%, 52%);
+}
+
+.balloon:nth-child(5) {
+  background: hsl(23, 55%, 57%);
+  animation-duration: 5s;
+}
+.balloon:nth-child(5):before {
+  color: hsl(23, 44%, 46%);
 }
 
 .birthdayCard {
@@ -32,9 +114,10 @@ body {
 
 .cardFront {
   position: relative;
-  background-color: #fff;
+  background-color: #fff4f4;
   width: 350px;
   height: 450px;
+  left: 250px;
   overflow: hidden;
   transform-origin: left;
   box-shadow: inset 100px 20px 100px rgba(0, 0, 0, 0.2),
@@ -46,7 +129,7 @@ body {
   fill: red;
   margin: auto;
   position: relative;
-  top: 9px;
+  top: 10px;
   width: 50px;
   animation: pulse 1s ease infinite;
 }
@@ -71,115 +154,63 @@ body {
   }
 }
 
-.balloons {
+.cake {
   position: absolute;
-}
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 200px;
+  height: 40px;
+  background: #6b5344;
+  border-radius: 100%;
+  box-shadow: 0px 4px 0px #6b5344, 0px 8px 0px #6b5344, 0px 12px 0px #6b5344,
+    0px 16px 0px #6b5344, 0px 20px 0px #6b5344, 0px 24px 0px #6b5344,
+    0px 28px 0px #6b5344, 0px 32px 0px #eb9f9f, 0px 36px 0px #eb9f9f,
+    0px 40px 0px #f8ecc9, 0px 44px 0px #f8ecc9, 0px 48px 0px #f8ecc9,
+    0px 52px 0px #f8ecc9, 0px 56px 0px #6b5344, 0px 60px 0px #6b5344,
+    0px 64px 0px #6b5344, 0px 68px 0px #6b5344, 0px 72px 0px #6b5344,
+    0px 76px 0px #6b5344, 0px 80px 0px #6b5344;
 
-.balloonOne,
-.balloonTwo,
-.balloonThree,
-.balloonFour,
-.balloonFive,
-.balloonSix {
-  position: absolute;
-  width: 85px;
-  height: 95px;
-  border-radius: 50%;
-}
+  &:before {
+    position: absolute;
+    right: 0;
+    top: 79px;
+    left: -25px;
+    margin: auto;
+    content: "";
+    width: 250px;
+    height: 50px;
+    border-radius: 100%;
+    background: #ffffff;
+    box-shadow: 0px 6px 0px rgba(0, 0, 0, 0.1);
+    z-index: -1;
+  }
 
-.balloonOne {
-  background-color: rgb(239, 71, 111, 0.7);
-  left: 0px;
-  top: 50px;
+  &:after {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    right: 0;
+    margin: 0;
+    bottom: 0;
+    content: "3";
+    font-family: "Open Sans";
+    font-size: 4em;
+    font-weight: bold;
+    color: #e5e5e5;
+    -webkit-text-stroke: 2px #f66095;
+    text-align: center;
+  }
 }
-
-.balloonTwo {
-  background-color: rgb(6, 214, 160, 0.7);
-  left: 50px;
-  top: 20px;
-}
-
-.balloonThree {
-  background-color: rgb(255, 209, 102, 0.7);
-  left: 110px;
-  top: 50px;
-}
-
-.balloonFour {
-  background-color: rgb(17, 138, 178, 0.7);
-  left: 165px;
-  top: 20px;
-}
-.balloonFive {
-  background-color: #a711b2b3;
-  left: 225px;
-  top: 50px;
-}
-
-.balloonSix {
-  background-color: #01ffc4b3;
-  left: 265px;
-  top: 20px;
-}
-
-.balloonOne:before,
-.balloonTwo:before,
-.balloonThree:before,
-.balloonFour:before,
-.balloonFive:before,
-.balloonSix::before {
-  content: "";
-  position: absolute;
-  width: 1px;
-  height: 155px;
-  background-color: #ffd166;
-  top: 95px;
-  left: 43px;
-}
-
-.balloonOne:after,
-.balloonTwo:after,
-.balloonThree:after,
-.balloonFour:after,
-.balloonFive:after,
-.balloonSix:after {
-  content: "";
-  position: absolute;
-  border-right: 7px solid transparent;
-  border-left: 7px solid transparent;
-  top: 94px;
-  left: 37px;
-}
-
-.balloonOne:after {
-  border-bottom: 5px solid #ef476f;
-}
-
-.balloonTwo:after {
-  border-bottom: 5px solid #06d6a0;
-}
-
-.balloonThree:after {
-  border-bottom: 5px solid #ffd166;
-}
-
-.balloonFour:after {
-  border-bottom: 5px solid #118ab2;
-}
-.balloonFive:after {
-  border-bottom: 5px solid #a711b2b3;
-}
-.balloonSix:after {
-  border-bottom: 5px solid #01ffc4b3;
-}
-
 .cardInside {
   position: absolute;
-  background-color: #fff;
+  background-color: #fff4f4;
   width: 350px;
   height: 450px;
   z-index: -1;
-  left: 0;
+  left: 250px;
   top: 0;
   box-shadow: inset 100px 20px 100px rgba(0, 0, 0, 0.2);
 }
