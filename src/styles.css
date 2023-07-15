@@ -1,4 +1,3 @@
-
 body {
   display: flex;
   align-items: center;
@@ -185,7 +184,7 @@ body {
     80px 5px #f08080, 90px 5px #9c6644;
 }
 
-.plate:before {
+.candle {
   content: "";
   position: absolute;
   background: repeating-linear-gradient(
@@ -195,34 +194,94 @@ body {
     #00f5d4 3px,
     #00f5d4 6px
   );
-  width: 7px;
+  width: 8px;
   height: 25px;
   top: -75px;
   left: 61px;
 }
 
-.plate:after {
+.candle:before {
   content: "";
   position: absolute;
-  width: 1px;
-  height: 5px;
   background-color: #333;
-  top: -80px;
-  left: 64px;
+  width: 2px;
+  height: 10px;
+  top: -10px;
+  left: 3px;
+}
+
+.candle:after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #fcca46;
+  border-radius: 80% 15% 55% 50% / 55% 15% 80% 50%;
+  box-shadow: inset -3px 3px #fe7f2d;
+  transform: rotate(-45deg);
+  top: -28px;
+  left: -6px;
+  opacity: 0.9;
+  animation: scale 0.5s ease-out infinite;
+}
+
+@keyframes scale {
+  0% {
+    transform: scaleY(1) rotate(-45deg);
+    opacity: 0.9;
+  }
+  50% {
+    transform: scaleY(0.9) rotate(-45deg);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scaleY(1) rotate(-45deg);
+    opacity: 0.9;
+  }
 }
 
 .flame {
   position: absolute;
-  background-color: #fb5607;
-  border-radius: 80% 0 55% 50% / 55% 0 80% 50%;
-  transform: rotate(-45deg);
-  width: 15px;
-  height: 15px;
-  opacity: 0.7;
-  top: -93px;
-  left: 57px;
 }
 
+.one {
+  position: absolute;
+  color: #fcca46;
+  font-size: 20px;
+  top: -100px;
+  left: 30px;
+  text-shadow: 33px -30px #fcca46;
+  animation: flash 0.5s ease infinite alternate;
+}
+
+.two {
+  position: absolute;
+  color: #fcca46;
+  font-size: 15px;
+  top: -120px;
+  left: 40px;
+  text-shadow: 35px 30px #fcca46;
+  animation: flash 0.8s ease infinite alternate;
+}
+
+.three {
+  position: absolute;
+  color: #fcca46;
+  font-size: 10px;
+  top: -125px;
+  left: 40px;
+  text-shadow: 30px 30px #fcca46;
+  animation: flash 0.4s ease infinite alternate;
+}
+
+@keyframes flash {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
 .cardInside {
   position: absolute;
   background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
@@ -261,3 +320,4 @@ p {
   -webkit-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.25),
     0 0 1px rgba(0, 0, 0, 0.4);
 }
+
