@@ -21,14 +21,7 @@ function Card() {
           <div className="flam"></div>
         </div>
       </div>
-
       <div className="cardInside">
-        {/* <div className="inside-text">
-          <h3 className="happy">HAPPY</h3>
-          <h2 className="bday">BIRTHDAY</h2>
-          <h3 className="toyou">EVELINA!</h3>
-        </div>
-        <div className="wishes"> */}
         <p>
           Σας Προσκαλώ στο παρτυ των γενεθλίων μου την Κυριακή 17 Δεκεμβρίου 2023
           και ώρα 6μ.μ απένατι από το σπιτι μου στην Pizza Πακέτο.
@@ -36,7 +29,6 @@ function Card() {
         <p className="name">EVELINA</p>
       </div>
     </div>
-    // </div>
   );
 }
 export default Card;
