@@ -256,31 +256,31 @@ body {
 
 .one {
   position: absolute;
-  color: #ffbb00;
-  font-size: 20px;
+  color: #f3d06e;
+  font-size: 15px;
   top: -100px;
   left: 30px;
-  text-shadow: 33px -30px #ffbb00;
+  text-shadow: 33px -30px #efcc6c;
   animation: flash 0.5s ease infinite alternate;
 }
 
 .two {
   position: absolute;
-  color: #ffbb00;
+  color: #ffd562;
   font-size: 15px;
   top: -120px;
   left: 40px;
-  text-shadow: 35px 30px #ffbb00;
+  text-shadow: 35px 30px #ffda73;
   animation: flash 0.8s ease infinite alternate;
 }
 
 .three {
   position: absolute;
-  color: #ffbb00;
-  font-size: 10px;
-  top: -125px;
-  left: 40px;
-  text-shadow: 30px 30px #ffbb00;
+  color: #f4d273;
+  font-size: 15px;
+  top: -130px;
+  left: 50px;
+  text-shadow: 30px 30px #ffd86d;
   animation: flash 0.4s ease infinite alternate;
 }
 
