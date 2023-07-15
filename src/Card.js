@@ -19,14 +19,19 @@ function Card() {
         </div>
         <div className="plate">
           <div className="cake"></div>
-          <div className="flame"></div>
+          <div className="flame">
+            <div class="candle"></div>
+            <div class="one">+</div>
+            <div class="two">+</div>
+            <div class="three">+</div>
+          </div>
         </div>
       </div>
 
       <div className="cardInside">
         <p>
-   Σας Προσκαλώ στο παρτυ των γενεθλίων μου την Κυριακή 17 Δεκεμβρίου
-    2023 και ώρα 6μ.μ στον παιδότοπο Πινόκιο 🎉.
+          Σας Προσκαλώ στο παρτυ των γενεθλίων μου την Κυριακή 17 Δεκεμβρίου
+          2023 και ώρα 6μ.μ στον παιδότοπο Πινόκιο 🎉.
         </p>
         <p className="name">EVELINA</p>
       </div>
