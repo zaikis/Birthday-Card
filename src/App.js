@@ -6,7 +6,6 @@ import Confetti from "react-confetti";
 export default function App() {
   return (
     <div>
-      <Balloons />
       <Confetti />
       <Card />
     </div>
