@@ -315,7 +315,7 @@ p {
 .button {
   position: absolute;
   bottom: 1em;
-  right: -1px;
+  right: -2px;
   background: rgb(252, 107, 107);
   color: #fff;
   font-family: "Nobile", sans-serif;
