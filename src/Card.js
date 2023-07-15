@@ -2,6 +2,8 @@ function Card() {
   return (
     <div className="birthdayCard">
       <div className="cardFront">
+        <button className="button">&gt;</button>
+        <button className="button">&lt;</button>
         <div className="front-text">
           <h3 className="happy">HAPPY</h3>
           <h2 className="bday">BIRTHDAY</h2>
@@ -21,9 +23,10 @@ function Card() {
           <div className="flam"></div>
         </div>
       </div>
+
       <div className="cardInside">
         <p>
-          Σας Προσκαλώ στο παρτυ των γενεθλίων μου την Κυριακή 17 Δεκεμβρίου 2023
+          Σας Προσκαλώ στο παρτυ των γενεθλίων μου το Σάββατο 17 Δεκεμβρίου 2023
           και ώρα 6μ.μ απένατι από το σπιτι μου στην Pizza Πακέτο.
         </p>
         <p className="name">EVELINA</p>
@@ -32,5 +35,6 @@ function Card() {
   );
 }
 export default Card;
+
 
 
