@@ -57,26 +57,36 @@ body {
 .happy,
 .toyou {
   position: relative;
-  font-family: didot;
+  font-family: "Times New Roman", Times, serif;
   text-align: center;
   backface-visibility: hidden;
-  font-size: 30px;
+  font-size: 20px;
+  background-image: linear-gradient(
+    to right,
+    rgb(255, 0, 195),
+    rgb(70, 38, 213)
+  );
+  background-clip: text;
+  color: transparent;
 }
 
 .happy {
-  top: 198px;
+  top: 210px;
 }
 
 .toyou {
-  top: 123px;
+  top: 150px;
 }
 
 .bday {
   position: relative;
-  font-family: arial;
-  font-size: 35px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 30px;
   text-align: center;
-  top: 163px;
+  top: 180px;
+  background-image: linear-gradient(to right, rgb(106, 255, 0), purple);
+  background-clip: text;
+  color: transparent;
 }
 
 .wrap-deco {
@@ -246,31 +256,31 @@ body {
 
 .one {
   position: absolute;
-  color: #fcca46;
+  color: #ffbb00;
   font-size: 20px;
   top: -100px;
   left: 30px;
-  text-shadow: 33px -30px #fcca46;
+  text-shadow: 33px -30px #ffbb00;
   animation: flash 0.5s ease infinite alternate;
 }
 
 .two {
   position: absolute;
-  color: #fcca46;
+  color: #ffbb00;
   font-size: 15px;
   top: -120px;
   left: 40px;
-  text-shadow: 35px 30px #fcca46;
+  text-shadow: 35px 30px #ffbb00;
   animation: flash 0.8s ease infinite alternate;
 }
 
 .three {
   position: absolute;
-  color: #fcca46;
+  color: #ffbb00;
   font-size: 10px;
   top: -125px;
   left: 40px;
-  text-shadow: 30px 30px #fcca46;
+  text-shadow: 30px 30px #ffbb00;
   animation: flash 0.4s ease infinite alternate;
 }
 
@@ -320,4 +330,3 @@ p {
   -webkit-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.25),
     0 0 1px rgba(0, 0, 0, 0.4);
 }
-
