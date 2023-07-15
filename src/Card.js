@@ -20,7 +20,6 @@ function Card() {
         <div className="plate">
           <div className="cake"></div>
           <div className="flame"></div>
-          <div className="flam"></div>
         </div>
       </div>
 
