@@ -1,16 +1,16 @@
 function Card() {
   return (
     <div>
-      <div class="balloons">
-        <div class="balloon"></div>
-        <div class="balloon"></div>
-        <div class="balloon"></div>
-        // <div class="balloon"></div>
-        // <div class="balloon"></div>
-        // <div class="balloon"></div>
-        // <div class="balloon"></div>
-        // <div class="balloon"></div>
-        // <div class="balloon"></div>
+      <div className="balloons">
+        <div className="balloon"></div>
+        <div className="balloon"></div>
+        <div className="balloon"></div>
+        {/* <div className="balloon"></div>
+        <div className="balloon"></div>
+        <div className="balloon"></div>
+        <div className="balloon"></div>
+        <div className="balloon"></div>
+        <div className="balloon"></div> */}
       </div>
       <div className="birthdayCard">
         <div className="cardFront">
@@ -54,7 +54,5 @@ function Card() {
   );
 }
 export default Card;
-
-
 
 
