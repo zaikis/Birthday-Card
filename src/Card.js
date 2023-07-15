@@ -5,12 +5,12 @@ function Card() {
         <div class="balloon"></div>
         <div class="balloon"></div>
         <div class="balloon"></div>
-        <div class="balloon"></div>
-        <div class="balloon"></div>
-        <div class="balloon"></div>
-        <div class="balloon"></div>
-        <div class="balloon"></div>
-        <div class="balloon"></div>
+        // <div class="balloon"></div>
+        // <div class="balloon"></div>
+        // <div class="balloon"></div>
+        // <div class="balloon"></div>
+        // <div class="balloon"></div>
+        // <div class="balloon"></div>
       </div>
       <div className="birthdayCard">
         <div className="cardFront">
