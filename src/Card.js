@@ -33,7 +33,7 @@ function Card() {
           Σας Προσκαλώ στο παρτυ των γενεθλίων μου την Κυριακή 17 Δεκεμβρίου
           2023 και ώρα 6μ.μ στον παιδότοπο Πινόκιο 🎉.
         </p>
-        <p className="name">EVELINA</p>
+        <p className="name">EVELINA🩷️</p>
       </div>
     </div>
   );
