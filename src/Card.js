@@ -20,10 +20,10 @@ function Card() {
         <div className="plate">
           <div className="cake"></div>
           <div className="flame">
-            <div class="candle"></div>
-            <div class="one">+</div>
-            <div class="two">+</div>
-            <div class="three">+</div>
+            <div className="candle"></div>
+            <div className="one">+</div>
+            <div className="two">+</div>
+            <div className="three">+</div>
           </div>
         </div>
       </div>
