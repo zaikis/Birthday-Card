@@ -3,7 +3,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-image: linear-gradient(#000000, #ff66cc);
+  background-image: linear-gradient(#bbbaba, #668cff);
 }
 
 .birthdayCard {
@@ -44,7 +44,7 @@ body {
 
 .cardFront {
   position: relative;
-  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  background-image: linear-gradient(120deg, #efa3c8 0%, #efa3c8 100%);
   width: 250px;
   height: 350px;
   overflow: hidden;
@@ -294,7 +294,7 @@ body {
 }
 .cardInside {
   position: absolute;
-  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+   background-image: linear-gradient(120deg, #efa3c8 0%, #efa3c8 100%);
   width: 250px;
   height: 350px;
   z-index: -1;
